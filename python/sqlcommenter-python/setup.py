@@ -26,7 +26,6 @@ def read_file(filename):
 
 setup(
     name='google-cloud-sqlcommenter',
-    version='2.0.0',
     author='Google Developers',
     author_email='sqlcommenter@googlegroups.com',
     description=('Augment SQL statements with meta information about frameworks and the running environment.'),
@@ -59,4 +58,6 @@ setup(
         'Framework :: Django :: 2.1',
         'Framework :: Django :: 2.2',
     ],
+    use_scm_version=True,
+    setup_requires=["setuptools_scm"]
 )
