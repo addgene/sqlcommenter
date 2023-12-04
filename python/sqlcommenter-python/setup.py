@@ -58,6 +58,6 @@ setup(
         'Framework :: Django :: 2.1',
         'Framework :: Django :: 2.2',
     ],
-    use_scm_version=True,
+    use_scm_version={"root": "../.."},
     setup_requires=["setuptools_scm"]
 )
